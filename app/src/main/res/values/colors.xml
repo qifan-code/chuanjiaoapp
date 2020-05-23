@@ -9,4 +9,5 @@
     <color name="forget_pin">#6787C1</color>
     <color name = "test">#000000</color>
     <color name="character_bg">#F1F3F6</color>
+    <color name="pangzi_test">#123456</color>
 </resources>
