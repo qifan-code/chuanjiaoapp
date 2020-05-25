@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SalesSidesActivity"></activity>
+        <activity android:name=".addnew_project"></activity>
+        <activity android:name=".SalesSidesActivity" />
         <activity android:name=".SalesActivity" />
         <activity
             android:name=".forget_password"

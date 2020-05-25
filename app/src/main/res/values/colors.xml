@@ -8,4 +8,6 @@
     <color name="white">#FFFFFF</color>
     <color name="forget_pin">#6787C1</color>
     <color name="character_bg">#F1F3F6</color>
+    <color name="project_detail">#C4C4C4</color>
+
 </resources>
