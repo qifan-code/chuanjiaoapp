@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SalesActivity"
-    android:background="@color/character_bg">
-
-    <androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/sales_drawer_layout"
+    android:background="@color/character_bg"
+    tools:openDrawer="start">
+    <include
+        layout ="@layout/sales_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <!--左侧菜单-->
-        <include
-            layout = "@layout/sales_sides"
-            android:layout_gravity = "start"
-            android:layout_width="250dp"
-            android:layout_height="match_parent"></include>
+        android:layout_height="match_parent"/>
 
 
-    </androidx.drawerlayout.widget.DrawerLayout>
-</RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/sales_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/sales_sides"
+        app:headerLayout="@layout/activity_sales_header"/>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
