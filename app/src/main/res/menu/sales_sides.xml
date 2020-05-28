@@ -3,13 +3,16 @@
     <group android:checkableBehavior="single">
         <item
             android:title="list1"
-            android:id="@+id/list1"/>
+            android:id="@+id/list1"
+            android:checkable="true"/>
         <item
             android:title="list2"
-            android:id="@+id/list2"/>
+            android:id="@+id/list2"
+            android:checkable="true"/>
         <item
             android:title="list3"
-            android:id="@+id/list3"/>
+            android:id="@+id/list3"
+            android:checkable="true"/>
 
 
     </group>
