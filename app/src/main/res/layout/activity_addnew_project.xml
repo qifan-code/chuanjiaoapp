@@ -8,29 +8,354 @@
     android:background="@color/character_bg">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:id="@+id/toolbar_addnew_project"
+        android:background="@color/bgcolor"
         tools:ignore="MissingConstraints" />
-    
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white">
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="40dp"
-            android:text="工单详情"
-            android:layout_marginLeft="20dp"
-            android:textColor="@color/project_detail"/>
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:background="@color/character_bg"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_addnew_project">
 
-        <!-- 在这里开始写-->
+            <!-- 以下为表格形式的LinearLayout格式的表格-->
+            <TextView
+                android:id="@+id/title_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:text="工单详情"
+                android:textColor="@color/project_detail"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="12dp">
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/subtitle_1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:text="客户名称"
+                    android:textColor="@color/project_detail"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="添加内容..."
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/placeholderText"
+                    android:textColor="@color/TextColor"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/subtitle_1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:text="联系人"
+                    android:textColor="@color/project_detail"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="添加内容..."
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/placeholderText"
+                    android:textColor="@color/TextColor"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/subtitle_1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:text="联系电话"
+                    android:textColor="@color/project_detail"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_1_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="添加内容..."
+                    android:inputType="phone"
+                    android:textColorHint="@color/placeholderText"
+                    android:textColor="@color/TextColor"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/subtitle_1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:text="项目地点"
+                    android:textColor="@color/project_detail"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_1_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="添加内容..."
+                    android:inputType="textShortMessage"
+                    android:textColorHint="@color/placeholderText"
+                    android:textColor="@color/TextColor"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/subtitle_1_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:text="合同编号"
+                    android:textColor="@color/project_detail"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_1_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="添加内容..."
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/placeholderText"
+                    android:textColor="@color/TextColor"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/subtitle_1_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:text="服务内容"
+                    android:textColor="@color/project_detail"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_1_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="添加内容..."
+                    android:inputType="textMultiLine"
+                    android:textColorHint="@color/placeholderText"
+                    android:textColor="@color/TextColor"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/subtitle_1_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:text="工单生成日期"
+                    android:textColor="@color/project_detail"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_1_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="添加内容..."
+                    android:inputType="date"
+                    android:textColorHint="@color/placeholderText"
+                    android:textColor="@color/TextColor"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+            <!-- 以上结束-->
+
+            <!-- 以下为动态添加形式的LinearLayout格式的表格-->
+            <TextView
+                android:id="@+id/title_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:text="领料详情"
+                android:textColor="@color/project_detail"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="12dp">
+
+                <!-- 动态添加部分待完善 -->
+
+                <TextView
+                    android:id="@+id/subtitle_2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:text="创建人"
+                    android:textColor="@color/project_detail"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="添加内容..."
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/placeholderText"
+                    android:textColor="@color/TextColor"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/subtitle_2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:text="创建日期"
+                    android:textColor="@color/project_detail"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="添加内容..."
+                    android:inputType="date"
+                    android:textColorHint="@color/placeholderText"
+                    android:textColor="@color/TextColor"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+            <!-- 以上结束-->
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/Submit"
+                android:layout_width="264dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@drawable/button_circle_shape_green"
+
+                android:text="提交" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

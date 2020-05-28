@@ -8,8 +8,9 @@
     android:id="@+id/sales_drawer_layout"
     android:background="@color/character_bg"
     tools:openDrawer="start">
+    <!--layout ="@layout/sales_toolbar"-->
     <include
-        layout ="@layout/sales_toolbar"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
@@ -19,8 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu/sales_sides"
+
         app:headerLayout="@layout/activity_sales_header"/>
+        <!--app:menu="@menu/sales_sides"-->
 
 
 

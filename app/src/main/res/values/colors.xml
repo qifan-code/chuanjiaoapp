@@ -10,5 +10,12 @@
     <color name="character_bg">#F1F3F6</color>
     <color name="project_detail">#C4C4C4</color>
     <color name="green">#00FF00</color>
+    <color name="TextColor">#353535</color>
+    <color name="placeholderText">#50353535</color>
+    <color name="TagGreen">#67C170</color>
+    <color name="TagBrown">#C1B867</color>
+    <color name="TagRed">#C16767</color>
+    <color name="ButtonGreen">#299E27</color>
+    <color name="ButtonBlue">#27519E</color>
 
 </resources>
