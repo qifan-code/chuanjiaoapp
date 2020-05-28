@@ -13,6 +13,7 @@ import androidx.appcompat.widget.Toolbar;
 public class test_activity extends AppCompatActivity {
 
     Button sales_button;
+    Button add_new_project_button;
     protected void onCreate(Bundle savedInstanceState) {
         //显示上方导航页面的 <-
 
@@ -24,6 +25,14 @@ public class test_activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(test_activity.this, SalesActivity.class);
+                startActivity(intent);
+            }
+        });
+        add_new_project_button = (Button) findViewById(R.id.new_project_button);
+        add_new_project_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (test_activity.this, addnew_project.class);
                 startActivity(intent);
             }
         });
