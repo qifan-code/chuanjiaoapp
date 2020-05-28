@@ -8,22 +8,19 @@
     android:id="@+id/sales_drawer_layout"
     android:background="@color/character_bg"
     tools:openDrawer="start">
-    <!--layout ="@layout/sales_toolbar"-->
+
     <include
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
+        layout="@layout/sales_toolbar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
 
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/sales_navigation_view"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:id="@+id/sales_nav_view"
         android:layout_gravity="start"
-
-        app:headerLayout="@layout/activity_sales_header"/>
-        <!--app:menu="@menu/sales_sides"-->
-
-
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/activity_sales_header"
+        app:menu="@menu/sales_sides"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
