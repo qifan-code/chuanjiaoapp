@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
-        <item
-            android:title="list1"
-            android:id="@+id/list1"
-            android:checkable="true"/>
-        <item
-            android:title="list2"
-            android:id="@+id/list2"
-            android:checkable="true"/>
-        <item
-            android:title="list3"
-            android:id="@+id/list3"
-            android:checkable="true"/>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
+    <group>
+        <item
+            android:icon="@drawable/ic_order_white_white"
+            android:title="客户管理"
+            android:id="@+id/list1"
+            android:checkable="true"
+            android:visible="true"/>
+            <group>
+                <item
+                    android:title="重要提醒"
+                    android:checkable="true"/>
+                <item
+                    android:title="客户列表"
+                    android:checkable="true"/>
+                <item
+                    android:title="新建档案"
+                    android:checkable="true"/>
+            </group>
+
+        <item
+            android:title="工单管理"
+            android:icon="@drawable/ic_order_white_white"
+            android:id="@+id/list2"
+            android:checkable="true"
+            android:visible="true"/>
+            <group>
+                <item
+                    android:title="重要提醒"
+                    android:checkable="true"/>
+                <item
+                    android:title="工单列表"
+                    android:checkable="true"/>
+                <item
+                    android:title="新建档案"
+                    android:checkable="true"/>
+            </group>
 
     </group>
 </menu>

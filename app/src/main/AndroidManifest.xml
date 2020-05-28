@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sales_header"></activity>
+        <activity android:name=".MaterialReturnActivity"></activity>
+        <activity android:name=".NewProjectMaterialApplyActivity" />
+        <activity android:name=".ProjectDetailActivity" />
+        <activity android:name=".sales_header" />
         <activity android:name=".addnew_project" />
         <activity android:name=".SalesActivity" />
         <activity
